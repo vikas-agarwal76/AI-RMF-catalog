@@ -1,0 +1,77 @@
+{
+  "catalog": {
+    "uuid": "e2b114d0-d47f-45bb-b224-f38f1eddf7cb",
+    "metadata": {
+      "title": "NIST AI Risk Management Framework",
+      "last-modified": "2024-06-10T04:16:32+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2"
+    },
+    "groups": [
+      {
+        "id": "MG",
+        "title": "Manage",
+        "groups": [
+          {
+            "id": "MG-2.2",
+            "title": "Mechanisms are in place and applied to sustain the value of deployed AI systems.",
+            "controls": [
+              {
+                "id": "MG-2.2-005",
+                "title": "GAI output",
+                "props": [
+                  {
+                    "name": "Control_Description",
+                    "value": "Filter GAI output for harmful or biased content, potential misinformation, and CBRN-related or NCII content."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "MG-3.2",
+            "title": "Pre-trained models which are used for development are monitored as part of AI system regular monitoring and maintenance.",
+            "controls": [
+              {
+                "id": "MG-3.2-005",
+                "title": "Content filters",
+                "props": [
+                  {
+                    "name": "Control_Description",
+                    "value": "Implement content filters to prevent the generation of inappropriate, harmful, toxic, false, illegal, or violent content related to the GAI application, including for CSAM and NCII. These filters can be rule-based or leverage additional machine learning models to flag problematic inputs and outputs."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "MG-4.1",
+            "title": "Post-deployment AI system monitoring plans are implemented, including mechanisms for capturing and evaluating input from users",
+            "controls": [
+              {
+                "id": "MG-4.1-006",
+                "title": "Sentiment analysis",
+                "props": [
+                  {
+                    "name": "Control_Description",
+                    "value": "Evaluate the use of sentiment analysis to gauge user sentiment regarding GAI content performance and impact, and work in collaboration with AI actors experienced in user research and experience."
+                  }
+                ]
+              },
+              {
+                "id": "MG-4.1-007",
+                "title": "Active learning",
+                "props": [
+                  {
+                    "name": "Control_Description",
+                    "value": "Implement active learning techniques to identify instances where the model fails or produces unexpected outputs."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
