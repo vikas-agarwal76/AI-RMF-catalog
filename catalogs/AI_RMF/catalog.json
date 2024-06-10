@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "e2b114d0-d47f-45bb-b224-f38f1eddf7cb",
+    "uuid": "6ecc398a-5491-474f-9373-5cb3f7c5ab7f",
     "metadata": {
       "title": "NIST AI Risk Management Framework",
-      "last-modified": "2024-06-10T04:16:32+00:00",
+      "last-modified": "2024-06-10T12:11:14+00:00",
       "version": "1.0.0",
       "oscal-version": "1.1.2"
     },
@@ -19,10 +19,11 @@
               {
                 "id": "MG-2.2-005",
                 "title": "GAI output",
-                "props": [
+                "parts": [
                   {
-                    "name": "Control_Description",
-                    "value": "Filter GAI output for harmful or biased content, potential misinformation, and CBRN-related or NCII content."
+                    "id": "MG-2.2-005_smt",
+                    "name": "statement",
+                    "prose": "Filter GAI output for harmful or biased content, potential misinformation, and CBRN-related or NCII content."
                   }
                 ]
               }
@@ -35,10 +36,11 @@
               {
                 "id": "MG-3.2-005",
                 "title": "Content filters",
-                "props": [
+                "parts": [
                   {
-                    "name": "Control_Description",
-                    "value": "Implement content filters to prevent the generation of inappropriate, harmful, toxic, false, illegal, or violent content related to the GAI application, including for CSAM and NCII. These filters can be rule-based or leverage additional machine learning models to flag problematic inputs and outputs."
+                    "id": "MG-3.2-005_smt",
+                    "name": "statement",
+                    "prose": "Implement content filters to prevent the generation of inappropriate, harmful, toxic, false, illegal, or violent content related to the GAI application, including for CSAM and NCII. These filters can be rule-based or leverage additional machine learning models to flag problematic inputs and outputs."
                   }
                 ]
               }
@@ -51,20 +53,22 @@
               {
                 "id": "MG-4.1-006",
                 "title": "Sentiment analysis",
-                "props": [
+                "parts": [
                   {
-                    "name": "Control_Description",
-                    "value": "Evaluate the use of sentiment analysis to gauge user sentiment regarding GAI content performance and impact, and work in collaboration with AI actors experienced in user research and experience."
+                    "id": "MG-4.1-006_smt",
+                    "name": "statement",
+                    "prose": "Evaluate the use of sentiment analysis to gauge user sentiment regarding GAI content performance and impact, and work in collaboration with AI actors experienced in user research and experience."
                   }
                 ]
               },
               {
                 "id": "MG-4.1-007",
                 "title": "Active learning",
-                "props": [
+                "parts": [
                   {
-                    "name": "Control_Description",
-                    "value": "Implement active learning techniques to identify instances where the model fails or produces unexpected outputs."
+                    "id": "MG-4.1-007_smt",
+                    "name": "statement",
+                    "prose": "Implement active learning techniques to identify instances where the model fails or produces unexpected outputs."
                   }
                 ]
               }

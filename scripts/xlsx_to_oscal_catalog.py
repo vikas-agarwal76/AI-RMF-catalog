@@ -26,7 +26,7 @@ from openpyxl import load_workbook
 
 from trestle.oscal import OSCAL_VERSION
 from trestle.oscal.catalog import Catalog, Control, Group
-from trestle.oscal.common import Metadata, Property
+from trestle.oscal.common import Metadata, Part
 
 import yaml
 
@@ -172,11 +172,13 @@ class CatalogHelper:
         subgroup = self._get_group(group.groups, subgroup_id, subgroup_title, None, [])
         control = Control(id=control_id, title=control_title)
         subgroup.controls.append(control)
-        control.props = []
-        value = self._normalize(control_description)
-        if value:
-            prop = Property(name='Control_Description', value=value)
-            control.props.append(prop)
+        control.parts = []
+        prose = self._normalize(control_description)
+        if prose:
+            smt_id = f'{control_id}_smt'
+            name = 'statement'
+            part = Part(id=smt_id, name=name, prose=prose)
+            control.parts.append(part)
 
 
 class CatalogBuilder:
